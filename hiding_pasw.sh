@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "enter your password"
 read -s PIN
-echo "OIN entered is : -s $PIN"
+echo -s "PIN entered is :  $PIN"
