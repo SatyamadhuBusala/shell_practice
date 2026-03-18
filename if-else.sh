@@ -1,9 +1,16 @@
 #!/bin/bash
+
 NUMBER=$1
-if [ $NUMBER -lt 10 ]; then
+
+if [ -z "$NUMBER" ]; then
+    echo "Please provide a number."
+    exit 1
+fi
+
+if [ "$NUMBER" -lt 10 ]; then
     echo "Given number $NUMBER is less than 10"
-elif [ $NUMBER -eq 10 ]; then
+elif [ "$NUMBER" -eq 10 ]; then
     echo "Given number $NUMBER is equal to 10"
-elif [ $NUMBER -gt 10 ]; then
-    echo "Given number $NUMBER is grater then 10"
+else
+    echo "Given number $NUMBER is greater than 10"
 fi
